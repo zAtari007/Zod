@@ -1,2 +1,2 @@
 # Zod
-Repositório Public
+Repositório Public - Para empresas e professores verem futuros projetos
