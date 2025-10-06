@@ -5,6 +5,48 @@
     list-style: none;
 }
 
+@media (max-width: 400px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90vw; /* usa 90% da largura da viewport */
+    padding: 10px;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+
+  .content {
+    padding: 10px 15px !important;
+    width: 100% !important;
+  }
+
+  .product-name {
+    font-size: 1.8rem !important;
+  }
+
+  .pulser-img {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  .mini-carousel .carousel-item img {
+    height: 180px;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .pu-img img, .logo::before {
+    animation: none !important;
+  }
+}
+
+
 @media (max-width: 576px) {
     .cards {
         flex-direction: column;
@@ -41,6 +83,13 @@
         font-size: 2.5rem;
     }
 }
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -79,7 +128,6 @@ header {
     background-color: #000000;
     z-index: 1000;
     transition: top 0.3s ease;
-    /* animação suave ao sumir/aparecer */
 }
 
 /* Garante que o conteúdo não fique escondido atrás do header */
